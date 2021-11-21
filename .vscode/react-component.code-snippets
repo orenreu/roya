@@ -1,0 +1,17 @@
+{
+  "React Component": {
+    "prefix": "rcomp",
+    "body": [
+      "import React from 'react';",
+      "import styled from 'styled-components';",
+      "",
+      "const $TM_FILENAME_BASE = () => {",
+      "  return <div></div>;",
+      "};",
+      "",
+      "export default $TM_FILENAME_BASE;",
+      ""
+    ],
+    "description": "React Component"
+  }
+}
