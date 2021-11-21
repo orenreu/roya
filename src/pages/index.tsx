@@ -90,7 +90,7 @@ const index = () => {
       icon: <YoutubeLogo color={theme.palette.white} size={32} />,
     },
     {
-      url: 'mailto:oriavni@gmail.com',
+      url: 'mailto:info@roya.fm',
       icon: <Envelope color={theme.palette.white} size={32} />,
     },
   ];
