@@ -1,10 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { InstagramLogo } from 'phosphor-react';
 import { Subtitle, Text } from './Typography';
-import { useTheme } from '../../context/ThemeProvider';
-import NavBar from './NavBar';
-import breakpoints from '../../styles/breakpoints';
 
 const Container = styled.footer`
   color: ${({ theme }) => theme.palette.white};
@@ -31,31 +27,6 @@ const LogoWrapper = styled.div`
   align-items: center;
 `;
 
-const SocialWrapper = styled.div`
-  display: none;
-
-  @media ${breakpoints.Large} {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-`;
-
-const NavContainer = styled.div`
-  display: none;
-  @media ${breakpoints.Large} {
-    flex: 1;
-    display: flex;
-    align-items: center;
-  }
-`;
-
-const StyledImage = styled.img`
-  width: 45px;
-  height: 45px;
-`;
-
 const StyledLogo = styled(Subtitle)`
   margin: 0;
 `;
@@ -65,7 +36,6 @@ const StyledText = styled(Text)`
 `;
 
 const Footer = () => {
-  const { theme } = useTheme();
   const year = new Date().getUTCFullYear();
 
   return (
