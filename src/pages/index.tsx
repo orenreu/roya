@@ -61,7 +61,7 @@ const SocialWrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 24px;
+  margin-top: 60px;
   margin-bottom: 60px;
 `;
 
