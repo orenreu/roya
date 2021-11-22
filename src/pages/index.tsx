@@ -15,6 +15,8 @@ import { useTheme } from '../context/ThemeProvider';
 import breakpoints from '../styles/breakpoints';
 
 const Background = styled.div`
+  position: fixed;
+  z-index: -10;
   background: url('images/bg.webp') no-repeat;
   background-size: 100vw 100vh;
   background-attachment: fixed;
@@ -95,7 +97,8 @@ const index = () => {
     },
   ];
   return (
-    <Background>
+    <>
+      <Background />
       <Layout>
         <TextContainer>
           <Title>royâ</Title>
@@ -122,7 +125,7 @@ const index = () => {
           </SocialContainer>
         </SocialWrapper>
       </Layout>
-    </Background>
+    </>
   );
 };
 
